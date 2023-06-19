@@ -12,23 +12,26 @@
     <title>My app</title>
   </head>
   <body>
-    <main class="app">
-      <!--TEXTAREA-->
-      <div class="textarea">
-        <form class="form__input form__input--text">
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-          <button class="form__btn">Find</button>
+    <div class="container">
+      <div class="section__for-text">
+        <h1 class="section-title">Enter your text below please</h1>
+        <form class="form">
+          <textarea class="textarea"></textarea>
+          <div class="find--section">
+            <label class="label" for="keyword">Keyword</label>
+            <input class="keyword" type="text" id="keyword" />
+          </div>
+
+          <button class="btn_find">Find</button>
         </form>
       </div>
-
-      <!--RESULTS-->
-      <div class="results">
-        <ul>
-          <li>1111</li>
-          <li>1111</li>
+      <div class="section__for-results">
+        <h1 class="section-title">Here you results</h1>
+        <ul class="found__items--list">
+          <li class="found__item">first item</li>
         </ul>
       </div>
-    </main>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

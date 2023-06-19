@@ -1,2 +1,120 @@
 /*
-Inspired 
+* Inspired by Jonas Bankist app
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #444;
+  background-color: #f3f3f3;
+  height: 100vh;
+  padding: 2rem;
+}
+
+.container {
+  background-color: #afd3e2;
+  max-width: 60%;
+  margin: 5rem auto;
+  padding: 3rem;
+  display: flex;
+  border-radius: 1rem;
+  border: 1px solid #444;
+}
+
+.section__for-text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.section__for-results {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textarea {
+  background-color: #f6f1f1;
+  color: inherit;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  outline: none;
+  font-family: inherit;
+  font-size: 1.5rem;
+  width: 75%;
+  height: 30rem;
+  resize: none;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.find--section {
+  display: flex;
+}
+
+.label {
+  color: inherit;
+  font-size: 1.5rem;
+  width: 40%;
+  text-align: center;
+}
+
+.keyword {
+  color: inherit;
+  font-size: 1.5rem;
+  background-color: #f6f1f1;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  width: 60%;
+}
+
+.btn_find {
+  margin: 1.5rem;
+  color: inherit;
+  font: inherit;
+  border: 1.5px solid #444;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 50%;
+}
+
+.btn_find:hover {
+  color: white;
+  background-color: #444;
+}
+
+.found__item {
+  opacity: 100;
+  background-color: #f6f1f1;
+  color: inherit;
+  list-style-type: none;
+  font-size: 1.5rem;
+  border: 1.5px solid #444;
+  border-radius: 10px;
+  text-align: center;
+}

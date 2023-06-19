@@ -1,13 +1,23 @@
-const buttonFind = document.querySelector(".find_btn");
-const words = document.querySelector(".words");
+const buttonFind = document.querySelector(".btn_find");
+const words = document.querySelector(".textarea");
+const keyword = document.querySelector(".keyword");
 
 let arrForWords;
-
-const findWords = function (arr) {};
+let arrEqualWords;
 
 buttonFind.addEventListener("click", function (e) {
   e.preventDefault();
   const newStr = words.value;
-  arrForWords = newStr.split(" ");
-  console.log(arrForWords);
+  const keyWord = keyword.value;
+
+  if (newStr && keyWord) {
+    arrForWords = newStr.split(" ");
+    arrEqualWords = arrForWords.filter((item) => item === keyWord);
+  }
+
+  console.log(arrForWords, keyWord, arrEqualWords, arrEqualWords.length);
 });
+
+// const li = document.createElement("li");
+// li.classList.add("found__item");
+// document.getElementsByClassName("found__items--list").append(li);
